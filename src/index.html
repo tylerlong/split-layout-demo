@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="grid">
-      <div>col 1</div>
-      <div class="gutter-col gutter-col-1"></div>
-      <div>col 2</div>
+    <div class="grid-rows">
+      <div>top</div>
+      <div class="gutter-row gutter-row-1"></div>
+      <div class="grid-cols">
+        <div>left</div>
+        <div class="gutter-col gutter-col-1"></div>
+        <div>right</div>
+      </div>
     </div>
     <script type="module" src="index.ts"></script>
   </body>

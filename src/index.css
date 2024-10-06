@@ -1,17 +1,35 @@
 @import '../node_modules/antd/dist/reset.css';
 
-.grid {
+.grid-rows {
   display: grid;
-  grid-template-columns: 1fr 8px 1fr;
+  grid-template-rows: 16px 8px 1fr;
   height: 100vh;
 }
+.gutter-row {
+  grid-column: 1/-1;
+  cursor: pointer;
+  background-color: lightgray;
+}
+.gutter-row:hover {
+  background-color: #e0e0e0;
+}
+.gutter-row-1 {
+  grid-row: 2;
+}
 
+.grid-cols {
+  display: grid;
+  grid-template-columns: 1fr 8px 1fr;
+  height: 100%;
+}
 .gutter-col {
   grid-row: 1/-1;
   cursor: col-resize;
   background-color: lightgray;
 }
-
+.gutter-col:hover {
+  background-color: #e0e0e0;
+}
 .gutter-col-1 {
   grid-column: 2;
 }
