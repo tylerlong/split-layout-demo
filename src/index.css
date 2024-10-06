@@ -5,16 +5,10 @@
   grid-template-rows: 16px 8px 1fr;
   height: 100vh;
 }
-.gutter-row {
-  grid-column: 1/-1;
-  cursor: pointer;
-  background-color: lightgray;
-}
-.gutter-row:hover {
-  background-color: #e0e0e0;
-}
 .gutter-row-1 {
+  grid-column: 1/-1;
   grid-row: 2;
+  cursor: pointer;
 }
 
 .grid-cols {
@@ -22,14 +16,15 @@
   grid-template-columns: 1fr 8px 1fr;
   height: 100%;
 }
-.gutter-col {
+.gutter-col-1 {
   grid-row: 1/-1;
+  grid-column: 2;
   cursor: col-resize;
+}
+
+.gutter {
   background-color: lightgray;
 }
-.gutter-col:hover {
+.gutter:hover {
   background-color: #e0e0e0;
-}
-.gutter-col-1 {
-  grid-column: 2;
 }
