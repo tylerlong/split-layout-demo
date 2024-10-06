@@ -1,22 +1,22 @@
 @import '../node_modules/antd/dist/reset.css';
 
-.grid-rows {
+#rows-grid {
   display: grid;
   grid-template-rows: 16px 8px 1fr;
   height: 100vh;
 }
-.gutter-row-1 {
+#row-gutter {
   grid-column: 1/-1;
   grid-row: 2;
   cursor: pointer;
 }
 
-.grid-cols {
+#cols-grid {
   display: grid;
   grid-template-columns: 1fr 8px 1fr;
   height: 100%;
 }
-.gutter-col-1 {
+#col-gutter {
   grid-row: 1/-1;
   grid-column: 2;
   cursor: col-resize;
