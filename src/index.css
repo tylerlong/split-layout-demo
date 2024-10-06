@@ -2,7 +2,7 @@
 
 #rows-grid {
   display: grid;
-  grid-template-rows: 16px 8px 1fr;
+  grid-template-rows: 24px 8px 1fr;
   height: 100vh;
 }
 #row-gutter {
@@ -23,10 +23,10 @@
 }
 
 .gutter {
-  background-color: lightgray;
+  background-color: #dddddd;
 }
 .gutter:hover {
-  background-color: #e0e0e0;
+  background-color: #c4e1a4;
 }
 
 #toolbar,
