@@ -1,5 +1,13 @@
-@import '../node_modules/antd/dist/reset.css';
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 10px 1fr;
+}
 
-body {
-  padding: 1rem;
+.gutter-col {
+  grid-row: 1/-1;
+  cursor: col-resize;
+}
+
+.gutter-col-1 {
+  grid-column: 2;
 }
