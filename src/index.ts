@@ -7,17 +7,13 @@ Split({
       element: document.querySelector('#col-gutter')!,
     },
   ],
+  snapOffset: 64,
 });
 
 const rowGutter = document.querySelector('#row-gutter') as HTMLDivElement;
 const rowsGrid = document.querySelector('#rows-grid') as HTMLDivElement;
 const toolbar = document.querySelector('#toolbar') as HTMLDivElement;
 rowGutter.addEventListener('click', () => {
-  if (toolbar.style.visibility === 'hidden') {
-    rowsGrid.style.gridTemplateRows = '16px 8px 1fr';
-    toolbar.style.visibility = 'visible';
-  } else {
-    rowsGrid.style.gridTemplateRows = '0px 8px 1fr';
-    toolbar.style.visibility = 'hidden';
-  }
+  rowsGrid.style.gridTemplateRows =
+    toolbar.offsetHeight === 0 ? '16px 8px 1fr' : '0px 8px 1fr';
 });

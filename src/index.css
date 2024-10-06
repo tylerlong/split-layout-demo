@@ -28,3 +28,9 @@
 .gutter:hover {
   background-color: #e0e0e0;
 }
+
+#toolbar,
+#left-panel,
+#right-panel {
+  overflow: hidden;
+}
