@@ -1,11 +1,15 @@
+@import '../node_modules/antd/dist/reset.css';
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 10px 1fr;
+  height: 100vh;
 }
 
 .gutter-col {
   grid-row: 1/-1;
   cursor: col-resize;
+  background-color: lightgray;
 }
 
 .gutter-col-1 {
