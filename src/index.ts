@@ -15,7 +15,7 @@ const rowsGrid = document.querySelector('#rows-grid') as HTMLDivElement;
 const toolbar = document.querySelector('#toolbar') as HTMLDivElement;
 rowGutter.addEventListener('click', () => {
   rowsGrid.style.gridTemplateRows =
-    toolbar.offsetHeight === 0 ? '24px 6px 1fr' : '0px 6px 1fr';
+    toolbar.offsetHeight === 0 ? '20px 6px 1fr' : '0px 6px 1fr';
   rowGutter.title =
     toolbar.offsetHeight === 0 ? 'Show toolbar' : 'Hide toolbar';
 });
