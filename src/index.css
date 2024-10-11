@@ -2,7 +2,7 @@
 
 #rows-grid {
   display: grid;
-  grid-template-rows: 24px 8px 1fr;
+  grid-template-rows: 24px 6px 1fr;
   height: 100vh;
 }
 #row-gutter {
@@ -13,8 +13,9 @@
 
 #cols-grid {
   display: grid;
-  grid-template-columns: 1fr 8px 1fr;
+  grid-template-columns: 1fr 6px 1fr;
   height: 100%;
+  overflow: hidden;
 }
 #col-gutter {
   grid-row: 1/-1;
@@ -29,8 +30,10 @@
   background-color: #c4e1a4;
 }
 
-#toolbar,
+#toolbar {
+  overflow: hidden;
+}
 #left-panel,
 #right-panel {
-  overflow: hidden;
+  overflow: scroll;
 }
